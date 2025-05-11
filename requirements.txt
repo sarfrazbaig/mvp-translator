@@ -1,0 +1,7 @@
+streamlit
+streamlit-webrtc
+faster-whisper
+gtts
+googletrans==4.0.0-rc1
+av
+numpy
