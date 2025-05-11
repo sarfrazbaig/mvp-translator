@@ -1,0 +1,24 @@
+# Ignore virtual environments
+venv/
+ENV/
+env/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Streamlit temporary files
+*.pyc
+*.pyo
+.streamlit/
+
+# macOS & IDEs
+.DS_Store
+.idea/
+.vscode/
+
+# Audio temp files
+*.wav
+*.mp3
