@@ -9,6 +9,7 @@ import tempfile
 import numpy as np
 import wave
 import av
+from streamlit_webrtc import WebRtcMode
 
 from streamlit_webrtc import webrtc_streamer, AudioProcessorBase
 
@@ -43,7 +44,7 @@ if input_mode == "🎤 Record from Microphone":
 
     ctx = webrtc_streamer(
         key="mic-audio",
-        mode="sendonly",
+        mode=WebRtcMode.SENDONLY,
         audio_receiver_size=256,
         media_stream_constraints={"video": False, "audio": True},
         rtc_configuration={"iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]},
